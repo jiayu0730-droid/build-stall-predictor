@@ -1,0 +1,26 @@
+{
+  "n_rows": 1200,
+  "stall_rate": 0.3658,
+  "baseline_logistic": {
+    "cv_auc_mean": 0.7287,
+    "cv_auc_std": 0.0186,
+    "test_auc": 0.7152,
+    "test_accuracy": 0.7125
+  },
+  "improved_random_forest": {
+    "cv_auc_mean": 0.7172,
+    "cv_auc_std": 0.0099,
+    "test_auc": 0.7238,
+    "test_accuracy": 0.7042
+  },
+  "top_features": {
+    "quote_spread_x_incomplete": 0.1607,
+    "design_revisions": 0.1056,
+    "quote_spread_pct": 0.104,
+    "lead_pressure": 0.1002,
+    "completeness_score": 0.0939,
+    "decision_reply_days": 0.0809,
+    "requested_lead_days": 0.079,
+    "bom_lines": 0.0671
+  }
+}
