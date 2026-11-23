@@ -2,9 +2,11 @@
 Module 5 - Deployment (KPI 1, delivery #5; completes KPI 2's
 "from data processing and training to deployment" chain)
 
-Scores ONE new build at intake and prints its stall risk, so the team can
-act before the build stalls: chase the missing BOM, clarify the package,
-or set expectations with the customer.
+Scores ONE new build at intake and prints its stall risk. The score is
+not the decision; it tells the team which builds need their unresolved
+questions closed first — chase the missing BOM, align the assumptions
+behind the quotes, or reset expectations with the customer — while
+changing course is still cheap.
 
 Usage:
   python src/predict.py --has-cad 1 --has-drawings 1 --has-bom 0 \
