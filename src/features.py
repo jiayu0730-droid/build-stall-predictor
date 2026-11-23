@@ -1,11 +1,15 @@
 """
 Module 2 - Feature engineering (KPI 1, delivery #2)
 
-Turns the clean table into model-ready features. The star feature is the
-Package Completeness Score: how much of the engineering package the
-customer actually handed over at intake. KnowYi's whole thesis is that
-builds stall on missing information, so this one number carries the
-business logic of the project.
+Turns the clean table into model-ready features. The central feature is
+the completeness score: how much of the engineering package the customer
+actually handed over at intake, read as a count of unresolved questions.
+In KnowYi's framing, builds stall on information problems at the boundary
+between engineering intent and physical production — this one number is
+that framing made measurable, and it carries the business logic of the
+project. A second key feature treats quote spread the way KnowYi's
+quotes-diverge note does: not only a pricing signal, but an ambiguity
+signal, which is why it is interacted with incompleteness below.
 
 Features produced:
   - completeness_score   0..1, share of the 6 intake items provided
